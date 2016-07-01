@@ -1,1 +1,1 @@
-# GA-JSD Portfolio
+# GA-JSD
