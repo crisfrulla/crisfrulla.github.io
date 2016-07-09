@@ -11,7 +11,8 @@
  * Use "image1.png", "image2.png", and "image3.png" as the array values.
  */
 
-// Your code here
+imagesSource = ["image1.png", "image2.png", "image3.png"];
+
 
 /**
  * Question 2
@@ -19,7 +20,7 @@
  * in variable q2.
  */
 
-// Your code here
+var q2 = imagesSource[0];
 
 /**
  * Question 3
@@ -27,7 +28,7 @@
  * and store it in variable q3
  */
 
-// Your code here
+var q3 = imagesSource.length;
 
 /**
  * Question 4
@@ -36,7 +37,7 @@
  */
 
 
-// Your code here
+var q4 = imagesSource[2];
 
 
 // ____________________________________________________________________________
@@ -54,14 +55,23 @@
  * an array of numbers with values 2, 3, 4, and 5.
  */
 
-// Your code here
-
+var numbers = [1, 2, 3, 4];
+numbers.forEach(function (num) {
+  newNumbers = num + 1;
+	console.log(newNumbers);
+});
 
 /**
  * Question 6
  * Using the array from Question 5, find the average of the numbers in the array
  * (average = sum of all numbers/number of numbers). Store the average in q6.
  */
+
+ var numbers = [1, 2, 3, 4];
+ var sumNums = numbers[0] + numbers[1] + numbers[2] + numbers[3];
+ var q6 =  sumNums;
+
+ console.log(q6);
 
 
 // Your code here
