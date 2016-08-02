@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<title>:: Weather App ::</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/weather-icons.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h1><i class="wi wi-day-cloudy"></i> Open Weather Maps API</h1>
+        <hr>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+
+        <form class="">
+          <div class="form-group">
+            <input type="text" class="form-control" id="location" placeholder="Enter a location">
+          </div>
+          <button id="weatherLocation" type="submit" class="sr-only">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div id="weatherResult" class="well hide">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="h3">Current Weather in <span id="currentCity"></span></h2>
+              <p class="lead"><span class="display-3" id="weatherIcon"></span> <span id="weatherDescription"></span></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <span class="display-1 hide" id="tempFahrenheit"></span>
+              <span class="display-1" id="tempCelsius"></span>
+              <button id="tempValue" type="button" class="btn btn-link btn-tempValue">&#8457;</button>
+            </div>
+            <div class="col-md-6">
+              <div class="secondaryValues">
+                <ul class="list-unstyled secondaryItems">
+                  <li class="display-4">Wind: <span id="wind"></span></li>
+                  <li class="display-4">Humidity: <span id="humidity"></span> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="main.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>

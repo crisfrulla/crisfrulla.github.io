@@ -1,0 +1,32 @@
+body {
+	font-size: 16px;
+	color: #333;
+}
+
+.btn-tempValue:hover, .btn-tempValue:focus, .btn-tempValue:active  {
+	text-decoration: none;
+}
+.lead {
+    margin-bottom: 0;
+}
+.display-1 {
+    font-size: 120px;
+    font-weight: 100;
+}
+.display-3 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.display-4 {
+    font-size: 24px;
+    font-weight: 100;
+}
+.secondaryValues {
+	line-height: 150px;
+}
+.secondaryItems {
+	line-height:normal;
+	display: inline-block;
+  vertical-align:bottom;
+}
