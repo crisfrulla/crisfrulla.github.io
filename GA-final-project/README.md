@@ -11,7 +11,7 @@ Tech News, Stock Price, Startup News
 
 ### CSS Frameworks
 * Bootstrap/SASS
-8 Angled Edges http://angled-edges.josephfus.co/?utm_source=codropscollective
+* Angled Edges http://angled-edges.josephfus.co/?utm_source=codropscollective
 
 ### JS Frameworks
 * Angular 2
