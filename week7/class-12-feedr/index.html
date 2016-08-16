@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Feedr @ GA</title>
+      <link rel="stylesheet" href="styles/normalize.css" media="screen" charset="utf-8">
+      <link rel="stylesheet" href="styles/html5bp.css" media="screen" charset="utf-8">
+      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" media="screen" charset="utf-8">
+      <link rel="stylesheet" href="styles/style.css" media="screen" charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+
+    <body>
+        <header>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <a href="#"><h1>Feedr</h1></a>
+                <nav>
+                  <ul class="list-inline" id="newsFeed">
+                  </ul>
+                  <section id="search">
+                    <input type="text" name="name" value="">
+                    <a href="#"><img src="images/search.png" alt="" /></a>
+                  </section>
+                </nav>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div id="popUp" class="loader hidden">
+          <a href="#" class="closePopUp">X</a>
+          <div class="container">
+            <h1>Article title here</h1>
+            <p>
+              Article description/content here.
+            </p>
+            <a href="#" class="popUpAction" target="_blank">Read more from source</a>
+          </div>
+        </div>
+        <div id="main" class="container">
+
+            <div class="row">
+              <div class="col-sm-12">
+                <ul class="list-inline" id="custom-filter">
+                  <li>
+                    <a data-filter="*">All Items</a>
+                  </li>
+                  <li>
+                    <a data-filter=".item1">Items 1</a>
+                  </li>
+                  <li>
+                    <a data-filter=".item2">Items 2</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row iso-container">
+              <div class="col-xs-12 col-sm-4 col-md-3 isotope-item item1">
+                <div class="thumbnail ">
+                  <img src="${image}">
+                  <div class="caption">
+                    <span class="text-uppercase small">${tag}</span>
+                    <h3 class="h4">${title}</h3>
+                    <p>${description} ...</p>
+                    <p><a target="_blank" href="${link}">Read More</a></p>
+                    <hr>
+                    <p class="small">Source: ${source}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4 col-md-3 isotope-item item2">
+                <div class="thumbnail ">
+                  <img src="${image}">
+                  <div class="caption">
+                    <span class="text-uppercase small">${tag}</span>
+                    <h3 class="h4">${title}</h3>
+                    <p>${description} ...</p>
+                    <p><a target="_blank" href="${link}">Read More</a></p>
+                    <hr>
+                    <p class="small">Source: ${source}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="news" class="row iso-container"></div>
+          </div>
+
+
+        <div id="loading">
+          <img src='./images/ajax_loader.gif'/>
+          <br>Loading...
+        </div>
+
+
+
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+
+        <script src="js/helperUtils.js"></script>
+        <script src="js/bundle.js"></script>
+    </body>
+</html>
