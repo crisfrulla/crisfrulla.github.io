@@ -1,0 +1,95 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-xs-offset-1">
+      <h2>Exchange</h2>
+
+
+      <div ng-controller="xchangeCtrl">
+        <div ng-show="loading" class="loading">LOADING...</div>
+        <div class="row">
+          <div class="col-md-6">
+            <div ng-repeat="x in rate">
+              <h4>{{x.Name}}</h4>
+              <p>$1 = ${{x.Rate}}</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h4>Select Currancy:</h4>
+            <form  class="form-inline">
+              <div class="form-group">
+                <select ng-model="xchangeFilter" class="form-control selectWidth" id="sel1">
+                  <option ng-repeat="x in rate" value="{{x.Rate}}">{{x.Name}}</option>
+                </select>
+              </div>
+              <input class="form-control" type="number" ng-model="xchangeInput">
+            </form>
+            <p class="display-4">${{xchangeInput * xchangeFilter}}</p>
+          </div>
+        </div>
+
+
+
+          <br>
+          <!-- <select ng-model="xchangeFilter">
+            <option ng-repeat="x in rate" value="{{x.Rate}}">{{x.Name}}</option>
+          </select> -->
+
+
+
+          <!-- <p>You selected: {{x.Name}} =  ${{xchangeFilter}}</p> -->
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-xs-offset-1">
+      <div ng-controller="LineCtrl">
+
+        <canvas id="line" class="chart chart-line" chart-data="data"
+        chart-labels="labels" chart-series="series" chart-options="options"
+        <chart-dataset></chart-dataset>-override="datasetOverride" chart-click="onClick">
+        </canvas>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-xs-offset-1">
+      <div ng-controller="financeNewsCtrl">
+        <div ng-show="loading" class="loading">LOADING...</div>
+        <h3>Latest News</h3>
+        <div class="row">
+          <div ng-show="loading" class="loading">LOADING...</div>
+          <div class="articleFeed clearfix" ng-repeat="x in financeNews">
+
+            <div class="col-md-3">
+              <img class="img-responsive" src="{{ x.image }}" alt="" />
+            </div>
+            <div class="col-md-9">
+              <h4>{{ x.title }}</h4>
+              <p>
+                <span class="text-muted">{{ x.post_date | date : "fullDate" }} | {{ x.author}} | <i class="fa fa-share-alt" aria-hidden="true"> {{ x.shares.total}}</i></span>
+              </p>
+              <p>{{ x.content.plain | limitTo:180}} ...</p>
+              <p><a href="{{x.link}}" target="_blank"><i class="fa fa-arrow-circle-right fa-fw" aria-hidden="true"></i>Read More</a></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
