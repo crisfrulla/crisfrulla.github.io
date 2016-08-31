@@ -29,7 +29,7 @@ app.controller('newsCtrl', function($scope, $http) {
 //exchange
 app.controller('xchangeCtrl', function($scope, $http) {
   $scope.loading = true;
-  $http.get("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22USDEUR%22%2C%22USDGBP%22%2C%22USDCAD%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=")
+  $http.get("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22USDEUR%22%2C%22USDGBP%22%2C%22USDCAD%22%2C%22USDJPY%22)&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=")
   .then(function (response) {
       $scope.rate = response.data.query.results.rate;
       $scope.loading = false;
@@ -48,44 +48,61 @@ app.controller('financeNewsCtrl', function($scope, $http) {
 });
 
 // chartjs
-app.controller("LineCtrl", function ($scope) {
+app.controller("LineCtrl", function ($scope, $http) {
 
   $scope.loading = true;
-  //
-  // $http.get("https://query.yahooapis.com/v1/public/yql?q=SELECT%20*%20FROM%20yahoo.finance.historicaldata%20WHERE%20symbol%3D%22AAPL%22%20and%20startDate%3D%222016-08-01%22%20and%20endDate%3D%222016-08-26%22&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=")
-  // .then(function (response) {
-  //     $scope.rate = query.results.quote.close;
-  //     $scope.loading = false;
-  // });
+  $http.get("https://query.yahooapis.com/v1/public/yql?q=SELECT%20*%20FROM%20yahoo.finance.historicaldata%20WHERE%20symbol%3D%22AAPL%22%20and%20startDate%3D%222016-08-01%22%20and%20endDate%3D%222016-08-26%22&format=json&diagnostics=true&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=")
+  .then(function (response) {
+      //$scope.rate = query.results.quote.close;
+      //var date = response.data.query.results.quote[i].Date;
+      $scope.loading = false;
+      //console.log(response.data.query.results.quote[i].Date);
+        // var test = [];
+        //
+        // for (var d = 0; d < date.length; d++) {
+        //     test.push(d);
+        //
+        // }
+      console.log(response.data.query.results.quote[8].Date);
+
+      // date.map(function(n) {
+      //   $scope.labels.push(n.$scope.label);
+      // });
+      // console.log($scope.label);
 
 
 
-  $scope.labels = ["January", "February", "March", "April", "May", "June", "July"];
-  $scope.series = ['Series A', 'Series B'];
-  $scope.data = [
-    [65, 59, 80, 81, 56, 55, 40],
-    [28, 48, 40, 19, 86, 27, 90]
-  ];
-  $scope.onClick = function (points, evt) {
-    console.log(points, evt);
-  };
-  $scope.datasetOverride = [{ yAxisID: 'y-axis-1' }, { yAxisID: 'y-axis-2' }];
-  $scope.options = {
-    scales: {
-      yAxes: [
-        {
-          id: 'y-axis-1',
-          type: 'linear',
-          display: true,
-          position: 'left'
-        },
-        {
-          id: 'y-axis-2',
-          type: 'linear',
-          display: true,
-          position: 'right'
+      $scope.labels = ["January", "February", "March", "April", "May", "June", "July"];
+      $scope.series = ['Series A', 'Series B', 'Series C'];
+      $scope.data = [
+        [65, 59, 80, 81, 56, 55, 40],
+        [25, 39, 60, 91, 46, 35, 20],
+        [28, 48, 40, 19, 86, 27, 90]
+      ];
+      $scope.onClick = function (points, evt) {
+        console.log(points, evt);
+      };
+      $scope.colours = ['#ff0000', '#00ff00', '#0000ff'];
+      $scope.datasetOverride = [{ yAxisID: 'y-axis-1' }, { yAxisID: 'y-axis-2' }];
+      $scope.options = {
+        scales: {
+          yAxes: [
+            {
+              id: 'y-axis-1',
+              type: 'linear',
+              display: true,
+              position: 'left'
+            },
+            {
+              id: 'y-axis-2',
+              type: 'linear',
+              display: true,
+              position: 'right'
+            }
+          ]
         }
-      ]
-    }
-  };
+      };
+  });
+
+
 });

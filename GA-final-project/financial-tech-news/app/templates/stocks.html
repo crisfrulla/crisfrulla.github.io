@@ -8,10 +8,23 @@
         <div ng-show="loading" class="loading">LOADING...</div>
         <div class="row">
           <div class="col-md-6">
-            <div ng-repeat="x in rate">
-              <h4>{{x.Name}}</h4>
-              <p>$1 = ${{x.Rate}}</p>
-            </div>
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th ng-repeat="x in rate">{{x.Name}}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ng-repeat="x in rate">{{x.Rate | currency}}</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- <div ng-repeat="x in rate">
+              <h5>{{x.Name}}</h5>
+              <p>$1 = {{x.Rate | currency}}</p>
+            </div> -->
           </div>
           <div class="col-md-6">
             <h4>Select Currancy:</h4>
@@ -23,7 +36,7 @@
               </div>
               <input class="form-control" type="number" ng-model="xchangeInput">
             </form>
-            <p class="display-4">${{xchangeInput * xchangeFilter}}</p>
+            <p class="display-4">{{xchangeInput * xchangeFilter | currency}}</p>
           </div>
         </div>
 
@@ -49,8 +62,8 @@
     <div class="col-md-10 col-xs-offset-1">
       <div ng-controller="LineCtrl">
 
-        <canvas id="line" class="chart chart-line" chart-data="data"
-        chart-labels="labels" chart-series="series" chart-options="options"
+        <canvas id="line" chart-colours="colours" class="chart chart-line" chart-data="data"
+        chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options"
         <chart-dataset></chart-dataset>-override="datasetOverride" chart-click="onClick">
         </canvas>
 
