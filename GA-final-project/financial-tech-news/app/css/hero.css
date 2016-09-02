@@ -1,0 +1,26 @@
+.layer-hero {
+  background: -webkit-linear-gradient(left, rgba(47, 39, 39, 0.9), rgba(26, 130, 247, 0.8));
+  height: 400px;
+  padding: 100px 0;
+  color: #fff;
+  position: relative; }
+  .layer-hero h1 {
+    display: inline; }
+  .layer-hero::after {
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20height=%22300%22%20width=%22100%25%22%20fill=%22rgb(255,255,255)%22%20fill-opacity=%221%22%3E%3Cpolygon%20points=%220,300%205000,300%205000,0%22%3E%3C/polygon%3E%3C/svg%3E");
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: '';
+    height: 300px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    bottom: 0; }
+
+.hero {
+  width: 100%;
+  height: 400px;
+  background-image: url("https://s.thestreet.com/files/tsc/v2008/photos/contrib/uploads/laptopandfinancialreport.jpg");
+  background-size: cover; }

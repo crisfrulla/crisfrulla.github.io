@@ -1,13 +1,11 @@
-<div class="container">
   <div class="row">
-    <div class="col-md-10 col-xs-offset-1">
-      <h2>Exchange</h2>
-
-
-      <div ng-controller="xchangeCtrl">
-        <div ng-show="loading" class="loading">LOADING...</div>
+    <div class="col-md-12">
+      <div class="exchange-rate" ng-controller="xchangeCtrl">
+        <div ng-show="loading" class="loading"></div>
+        <h3>Exchange Rate <span class="small"> {{create | date}}</span></h3>
+        <br>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-12">
 
             <table class="table">
               <thead>
@@ -21,13 +19,11 @@
                 </tr>
               </tbody>
             </table>
-            <!-- <div ng-repeat="x in rate">
-              <h5>{{x.Name}}</h5>
-              <p>$1 = {{x.Rate | currency}}</p>
-            </div> -->
-          </div>
-          <div class="col-md-6">
-            <h4>Select Currancy:</h4>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h4>Currency Calculator</h4>
             <form  class="form-inline">
               <div class="form-group">
                 <select ng-model="xchangeFilter" class="form-control selectWidth" id="sel1">
@@ -35,55 +31,62 @@
                 </select>
               </div>
               <input class="form-control" type="number" ng-model="xchangeInput">
+              <span class="total-exchange">{{xchangeInput * xchangeFilter | currency}}</span>
             </form>
-            <p class="display-4">{{xchangeInput * xchangeFilter | currency}}</p>
+
           </div>
         </div>
-
-
-
-          <br>
-          <!-- <select ng-model="xchangeFilter">
-            <option ng-repeat="x in rate" value="{{x.Rate}}">{{x.Name}}</option>
-          </select> -->
-
-
-
-          <!-- <p>You selected: {{x.Name}} =  ${{xchangeFilter}}</p> -->
-
-
       </div>
     </div>
   </div>
-</div>
 
-<div class="container">
   <div class="row">
-    <div class="col-md-10 col-xs-offset-1">
-      <div ng-controller="LineCtrl">
-
-        <canvas id="line" chart-colours="colours" class="chart chart-line" chart-data="data"
-        chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options"
-        <chart-dataset></chart-dataset>-override="datasetOverride" chart-click="onClick">
-        </canvas>
-
+    <div class="col-md-12">
+      <h3>Stock Price</h3>
+      <div class="slick-content">
+        <div class="stock-slider">
+          <div ng-controller="LineCtrlApple">
+            <div ng-show="loading" class="loading"></div>
+            <h4>{{series[0]}}
+              <span class="small"> {{openData[0] - closeData[0] | number:2}}</span>
+            </h4>
+            <canvas id="line" chart-colours="colours" class="chart chart-line" chart-data="data"
+            chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options"></canvas>
+          </div>
+          <div ng-controller="LineCtrlGoogle">
+            <div ng-show="loading" class="loading"></div>
+            <h4>{{series[0]}}
+              <span class="small"> {{openData[0] - closeData[0] | number:2}}</span>
+            </h4>
+            <canvas id="line" chart-colours="colours" class="chart chart-line" chart-data="data"
+            chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options"></canvas>
+          </div>
+          <div ng-controller="LineCtrlAmazon">
+            <div ng-show="loading" class="loading"></div>
+            <h4>{{series[0]}}
+              <span class="small"> {{openData[0] - closeData[0] | number:2}}</span>
+            </h4>
+            <canvas id="line" chart-colours="colours" class="chart chart-line" chart-data="data"
+            chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options"></canvas>
+          </div>
+          <div ng-controller="LineCtrlYahoo">
+            <div ng-show="loading" class="loading"></div>
+            <h4>{{series[0]}}
+              <span class="small"> {{openData[0] - closeData[0] | number:2}}</span>
+            </h4>
+            <canvas id="line" chart-colours="colours" class="chart chart-line" chart-data="data"
+            chart-labels="labels" chart-legend="false" chart-series="series" chart-options="options"></canvas>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-
-
-
-
-<div class="container">
   <div class="row">
-    <div class="col-md-10 col-xs-offset-1">
-      <div ng-controller="financeNewsCtrl">
-        <div ng-show="loading" class="loading">LOADING...</div>
+    <div class="col-md-12">
+      <div class="fin-news" ng-controller="financeNewsCtrl">
+        <div ng-show="loading" class="loading"></div>
         <h3>Latest News</h3>
         <div class="row">
-          <div ng-show="loading" class="loading">LOADING...</div>
           <div class="articleFeed clearfix" ng-repeat="x in financeNews">
 
             <div class="col-md-3">
@@ -105,4 +108,3 @@
 
     </div>
   </div>
-</div>

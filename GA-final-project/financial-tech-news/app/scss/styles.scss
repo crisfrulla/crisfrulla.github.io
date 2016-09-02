@@ -1,7 +1,30 @@
 @import 'bootstrap';
 @import 'pru-variables';
 @import 'font-awesome';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700';
+@import 'hero.scss';
 
+body {
+  background: #f2f2f2;
+  font-size: 16px;
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.46;
+}
+h1, h2, h3{
+  font-weight: 700;
+}
+h4, h5 {
+  font-weight: 600;
+}
+.logo {
+  height: 30px;
+}
+.bg-conteiner {
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
 /* Custom Styles */
 .display-1 {
     font-size: 6rem;
@@ -19,6 +42,18 @@
     font-size: 3.5rem;
     font-weight: 300;
 }
+.top-nav {
+  padding: 20px 0;
+  ul li a{
+    color: #2F2727;
+    padding: 0 10px;
+  }
+}
+.total-exchange {
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
 .articleFeed {
 	padding: 30px 0;
 	border-bottom: 1px solid #f2f2f2;
@@ -27,4 +62,111 @@
 .selectWidth {
 	width: auto;
   margin-right:10px;
+}
+.navbar-default .btn:not(:last-child) {
+    border-right: none;
+}
+.btn-group .btn:not(:last-child) {
+    border-right: none;
+}
+.exchange-rate, .slick-content, .fin-news, .tech-news {
+  margin: 40px 0;
+}
+.slick-content {
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+.slick-slide {
+    padding:10px;
+    text-align:center;
+    margin-right:15px;
+    margin-left:15px;
+}
+.slick-next {
+    right: -5px;
+}
+.slick-prev {
+    left: -5px;
+}
+.slick-prev:before, .slick-next:before {
+  font-family: FontAwesome;
+  font-size: 40px;
+  line-height: 1;
+  color: #ccc;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev:before {
+  content: "\f104";
+}
+[dir="rtl"] .slick-prev:before {
+  content: "\f105";
+}
+
+[dir="rtl"] .slick-next {
+  left: -10px;
+  top: 70px;
+  right: auto;
+}
+.slick-next:before {
+  content: "\f105";
+}
+[dir="rtl"] .slick-next:before {
+  content: "\f104";
+}
+footer {
+  padding: 30px 0;
+}
+
+//loading
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  50% {
+    background: #fff;
+  }
+}
+.loading {
+    margin: 50px auto;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    border: .25rem solid rgba(#2F2727, 0.2);
+    border-top-color: #2F2727;
+    animation: spin 1s infinite linear;
+  &--double {
+    border-style: double;
+    border-width: .5rem;
+  }
+}
+// typed
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
