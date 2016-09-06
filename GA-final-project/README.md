@@ -1,7 +1,6 @@
 
 # Tech App
-FIN / TECH
-Tech News, Stock Price, Startup News
+FIN / TECH - Tech News, Stock Price, Startup News
 
 ### APIs
 * YAHOO Finance
