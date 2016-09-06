@@ -3,20 +3,18 @@
 FIN / TECH
 Tech News, Stock Price, Startup News
 
-## Assets
-
 ### APIs
 * YAHOO Finance
 * Mashable Technology/Finance
 
-### CSS Frameworks
+### CSS Framework
 * Bootstrap/SASS
 * Angled Edges
 
-### JS Frameworks
+### JS Framework
 * Angular 1.5
 
-### JS Libraries
+### JS Libraries/Plugins
 * Jquery
 * Angular-Chart JS
 * Bootstrap UI
@@ -26,3 +24,6 @@ Tech News, Stock Price, Startup News
 ### Fonts
 * Fontawesome
 * Google Fonts
+
+### Live Demo
+[crisfrulla.surge.sh/](http://crisfrulla.surge.sh/)
