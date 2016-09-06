@@ -26,4 +26,4 @@ Tech News, Stock Price, Startup News
 * Google Fonts
 
 ### Live Demo
-[crisfrulla.surge.sh/](http://crisfrulla.surge.sh/)
+[crisfrulla.surge.sh](http://crisfrulla.surge.sh/)
