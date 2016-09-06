@@ -1,27 +1,27 @@
 
 # Tech App
+FIN / TECH
 Tech News, Stock Price, Startup News
 
 ## Assets
 
 ### APIs
 * YAHOO Finance
-* Markit On Demand - http://dev.markitondemand.com/MODApis/#doc
-* DIGG - http://digg.com/channel/technology
+* Mashable Technology/Finance
 
 ### CSS Frameworks
 * Bootstrap/SASS
-* Angled Edges http://angled-edges.josephfus.co/?utm_source=codropscollective
+* Angled Edges
 
 ### JS Frameworks
-* Angular 2
+* Angular 1.5
 
 ### JS Libraries
 * Jquery
-* Chart JS
-
-### Database
-* Firebase
+* Angular-Chart JS
+* Bootstrap UI
+* Slick JS
+* Typed JS
 
 ### Fonts
 * Fontawesome
