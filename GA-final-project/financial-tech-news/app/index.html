@@ -16,18 +16,18 @@
     <div class="container bg-conteiner">
       <div class="row">
         <div class="col-md-12">
-          <div class="top-nav">
+          <div class="top-nav" ng-controller="navCtrl">
             <div class="row">
 
               <div class="col-md-4">
-                <a href="#/">
+                <a href="#/" ng-class="{ active: isActive('/')}">
                   <img class="logo" src="images/logo.svg" alt="">
                 </a>
               </div>
               <div class="col-md-8 text-right">
                 <ul class="list-inline">
-                  <li><a href="#/">Stocks</a></li>
-                  <li><a href="#news">News</a></li>
+                  <li ng-class="{ active: isActive('/')}"><a href="#/">Stocks</a></li>
+                  <li ng-class="{ active: isActive('/news')}"><a href="#news">News</a></li>
                 </ul>
               </div>
             </div>

@@ -3,8 +3,6 @@
 $(document).ready(function() {
     $("body").hide().fadeIn("fast");
 });
-
-
 // Routes
 var app = angular.module("App", ["ngRoute", "ui.bootstrap", "chart.js"]);
 app.config(function($routeProvider) {
@@ -16,7 +14,12 @@ app.config(function($routeProvider) {
       templateUrl : "./templates/news.html"
   })
 });
-
+//Nav
+app.controller('navCtrl', function($scope, $location) {
+  $scope.isActive = function (viewLocation) {
+      return viewLocation === $location.path();
+  };
+});
 //HTTP News
 app.controller('newsCtrl', function($scope, $http) {
   $scope.loading = true;
@@ -29,8 +32,6 @@ app.controller('newsCtrl', function($scope, $http) {
       $scope.loading = false;
   });
 });
-
-
 //exchange
 app.controller('xchangeCtrl', function($scope, $http) {
   $scope.loading = true;
@@ -42,7 +43,6 @@ app.controller('xchangeCtrl', function($scope, $http) {
       $scope.create = response.data.query.created;
   });
 });
-
 //Finance News
 app.controller('financeNewsCtrl', function($scope, $http) {
   $scope.loading = true;
@@ -52,7 +52,6 @@ app.controller('financeNewsCtrl', function($scope, $http) {
       $scope.loading = false;
   });
 });
-
 // chartjs
 app.controller("LineCtrlApple", function ($scope, $http) {
   $scope.loading = true;
