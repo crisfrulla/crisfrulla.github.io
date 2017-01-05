@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2529px" height="2899px" viewBox="0 0 2529 2899" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>tv</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1527,7 L1632,7 L1611.14759,361.040859 C1610.49834,372.063988 1601.01227,381 1589.97447,381 L1569.02553,381 C1557.98118,381 1548.50114,372.055255 1547.85241,361.040859 L1527,7 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-20" y="-20" width="145" height="414">
+            <rect x="1507" y="-13" width="145" height="414" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+        <path d="M32,7 L137,7 L116.147588,361.040859 C115.498344,372.063988 106.012269,381 94.9744697,381 L74.0255303,381 C62.9811838,381 53.5011416,372.055255 52.8524122,361.040859 L32,7 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-20" y="-20" width="145" height="414">
+            <rect x="12" y="-13" width="145" height="414" fill="white"></rect>
+            <use xlink:href="#path-3" fill="black"></use>
+        </mask>
+        <path d="M248.598333,717.634921 L258.085114,-36.8876755 L210.962535,-36.8876755 L220.453265,717.949001 C208.710125,723.396626 200.566026,735.291461 200.566026,749.088452 C200.566026,768.036504 215.926456,783.396934 234.874507,783.396934 C253.822559,783.396934 269.182989,768.036504 269.182989,749.088452 C269.182989,735.019954 260.715205,722.929212 248.598334,717.634925 Z" id="path-5"></path>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-20" y="-20" width="108.616964" height="860.28461">
+            <rect x="180.566026" y="-56.8876755" width="108.616964" height="860.28461" fill="white"></rect>
+            <use xlink:href="#path-5" fill="black"></use>
+        </mask>
+        <path d="M1021.96413,836.296505 L1031.45091,81.7739087 L984.328328,81.7739087 L993.819058,836.610585 C982.075918,842.05821 973.931819,853.953045 973.931819,867.750037 C973.931819,886.698088 989.292249,902.058518 1008.2403,902.058518 C1027.18835,902.058518 1042.54878,886.698088 1042.54878,867.750037 C1042.54878,853.681538 1034.081,841.590796 1021.96413,836.29651 Z" id="path-7"></path>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-20" y="-20" width="108.616964" height="860.28461">
+            <rect x="953.931819" y="61.7739087" width="108.616964" height="860.28461" fill="white"></rect>
+            <use xlink:href="#path-7" fill="black"></use>
+        </mask>
+        <path d="M775,835.819689 C775,750.867421 684.561519,682 573,682 C461.438481,682 371,750.867421 371,835.819689 C764.621281,832.066515 376.37126,836.973371 775,835.819689 Z" id="path-9"></path>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-20" y="-20" width="444" height="194">
+            <rect x="351" y="662" width="444" height="194" fill="white"></rect>
+            <use xlink:href="#path-9" fill="black"></use>
+        </mask>
+        <path d="M193.393059,2537.39776 C183.554378,2534.988 76.8931968,2534.31571 30.81162,2346.42928 C-15.2699568,2158.54285 -3.6095578,1184.02951 26.3314667,1066.02547 C56.2724912,948.021433 106.114197,892.899547 228.718392,870.878793 C351.322587,848.85804 2202.37278,815.27412 2213.4263,819.33703 C2224.47983,823.39994 2444.57421,794.836191 2467.05498,976.062392 C2489.53575,1157.28859 2494.77593,2211.10465 2480.91546,2327.08862 C2467.05498,2443.07259 2440.97409,2495.33438 2260.56792,2522.3353 C2080.16174,2549.33623 703.022876,2567.16499 375.266647,2551.77882 C290.521725,2547.80056 241.768115,2549.24612 193.393059,2537.39776 Z M291.314272,2159.66239 C214.282305,2052.99587 141.788541,1673.18196 205.270663,1412.6762 C271.838758,1139.50682 324.540618,1046.85919 611.644642,990.626631 C898.748666,934.394068 1306.26253,938.723741 1447.08099,999.068594 C1587.89944,1059.41345 1751.85329,1171.51543 1764.95826,1497.52096 C1778.06323,1823.5265 1801.82008,2250.00962 1481.80588,2316.3428 C1161.79169,2382.67598 707.315279,2422.45645 540.646671,2351.30103 C373.978064,2280.1456 368.346239,2266.32891 291.314272,2159.66239 Z" id="path-11"></path>
+        <mask id="mask-12" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-20" y="-20" width="2528.55018" height="1778.4685">
+            <rect x="-20" y="799" width="2528.55018" height="1778.4685" fill="white"></rect>
+            <use xlink:href="#path-11" fill="black"></use>
+        </mask>
+        <circle id="path-13" cx="156.5" cy="156.5" r="156.5"></circle>
+        <mask id="mask-14" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="313" height="313" fill="white">
+            <use xlink:href="#path-13"></use>
+        </mask>
+        <circle id="path-15" cx="156.5" cy="156.5" r="156.5"></circle>
+        <mask id="mask-16" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="313" height="313" fill="white">
+            <use xlink:href="#path-15"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tv" transform="translate(20.000000, 7.000000)">
+            <g id="legs" transform="translate(412.000000, 2491.000000)">
+                <g id="Rectangle-4" transform="translate(1579.500000, 194.000000) rotate(-10.000000) translate(-1579.500000, -194.000000) ">
+                    <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <use stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="40" xlink:href="#path-1"></use>
+                </g>
+                <g id="Rectangle-4" transform="translate(84.500000, 194.000000) rotate(10.000000) translate(-84.500000, -194.000000) ">
+                    <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <use stroke="#FFFFFF" mask="url(#mask-4)" stroke-width="40" xlink:href="#path-3"></use>
+                </g>
+            </g>
+            <g id="antenna" transform="translate(671.000000, 0.000000)">
+                <g id="Combined-Shape" transform="translate(234.874507, 373.254629) rotate(150.000000) translate(-234.874507, -373.254629) ">
+                    <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    <use stroke="#FFFFFF" mask="url(#mask-6)" stroke-width="40" xlink:href="#path-5"></use>
+                </g>
+                <g id="Combined-Shape" transform="translate(1008.240301, 491.916214) rotate(230.000000) translate(-1008.240301, -491.916214) ">
+                    <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-7"></use>
+                    <use stroke="#FFFFFF" mask="url(#mask-8)" stroke-width="40" xlink:href="#path-7"></use>
+                </g>
+                <g id="Oval-2">
+                    <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-9"></use>
+                    <use stroke="#FFFFFF" mask="url(#mask-10)" stroke-width="40" xlink:href="#path-9"></use>
+                </g>
+            </g>
+            <g>
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-11"></use>
+                <use stroke="#FFFFFF" mask="url(#mask-12)" stroke-width="40" xlink:href="#path-11"></use>
+            </g>
+            <g id="grid" transform="translate(1875.000000, 1019.000000)">
+                <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="428" height="541" rx="12"></rect>
+                <g id="Group" transform="translate(26.000000, 29.000000)" fill="#D8D8D8">
+                    <rect id="Rectangle-2" x="0" y="0" width="376" height="20"></rect>
+                    <rect id="Rectangle-2" x="0" y="47" width="376" height="20"></rect>
+                    <rect id="Rectangle-2" x="0" y="93" width="376" height="20"></rect>
+                    <rect id="Rectangle-2" x="0" y="140" width="376" height="20"></rect>
+                    <rect id="Rectangle-2" x="0" y="187" width="376" height="20"></rect>
+                    <rect id="Rectangle-2" x="0" y="234" width="376" height="20"></rect>
+                    <rect id="Rectangle-2" x="0" y="280" width="376" height="20"></rect>
+                    <rect id="Rectangle-2" x="0" y="327" width="376" height="20"></rect>
+                    <rect id="Rectangle-2" x="0" y="374" width="376" height="20"></rect>
+                    <rect id="Rectangle-2" x="0" y="420" width="376" height="20"></rect>
+                    <rect id="Rectangle-2" x="0" y="467" width="376" height="20"></rect>
+                </g>
+            </g>
+            <g id="noob-1" transform="translate(1926.000000, 1691.000000)">
+                <use id="Oval" stroke="#FFFFFF" mask="url(#mask-14)" stroke-width="64" xlink:href="#path-13"></use>
+                <rect id="Rectangle-3" fill="#FFFFFF" x="122" y="42" width="70" height="230" rx="35"></rect>
+            </g>
+            <g id="noob-2" transform="translate(2082.500000, 2237.500000) rotate(41.000000) translate(-2082.500000, -2237.500000) translate(1926.000000, 2081.000000)">
+                <use id="Oval" stroke="#FFFFFF" mask="url(#mask-16)" stroke-width="64" xlink:href="#path-15"></use>
+                <rect id="Rectangle-3" fill="#FFFFFF" x="122" y="42" width="70" height="230" rx="35"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
